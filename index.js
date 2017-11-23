@@ -42,11 +42,12 @@ app.use(cors({
    origin: "*"
 }));
 
-app.use((req, res) => {
+app.use((req, res, next) => {
   res.setHeader("AMP-Access-Control-Allow-Source-Origin", "*");
   res.setHeader("AMP-Access-Control-Allow-Source-Origin", "*");
   res.setHeader("Access-Control-Expose-Headers", "AMP-Access-Control-Allow-Source-Origin");
-})
+  next();
+});
 
 app.get('/favorites', (req, res) => {
   res.json(PUPPY_DATA);
