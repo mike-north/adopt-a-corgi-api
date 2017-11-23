@@ -1,5 +1,6 @@
 // @ts-check
 const express = require('express');
+const cors = require('cors');
 let app = express();
 
 const PUPPY_DATA = [
@@ -32,6 +33,10 @@ const PUPPY_DATA = [
     gender: "male"
   }
 ];
+
+app.use(cors({
+   origin: "*"
+}));
 
 app.get('/favorites', (req, res) => {
   res.json(PUPPY_DATA);
