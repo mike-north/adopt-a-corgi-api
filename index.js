@@ -9,6 +9,7 @@ const PUPPY_DATA = [
     breed: "Pembroke Welsh Corgi",
     birthday: "10/27/2017",
     vaccinated: true,
+    isFavorited: true,
     gender: "male"
   },
   {
@@ -16,6 +17,7 @@ const PUPPY_DATA = [
     breed: "Pembroke Welsh Corgi",
     birthday: "10/18/2017",
     vaccinated: true,
+    isFavorited: true,
     gender: "female"
   },
   {
@@ -23,6 +25,7 @@ const PUPPY_DATA = [
     breed: "Pembroke Welsh Corgi",
     birthday: "10/18/2012",
     vaccinated: true,
+    isFavorited: true,
     gender: "female"
   },
   {
@@ -30,6 +33,7 @@ const PUPPY_DATA = [
     breed: "Pembroke Welsh Corgi",
     birthday: "10/01/2017",
     vaccinated: true,
+    isFavorited: true,
     gender: "male"
   }
 ];
