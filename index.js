@@ -51,7 +51,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/favorites', (req, res) => {
-  res.json(PUPPY_DATA);
+  res.json({items: PUPPY_DATA});
 });
 
 app.listen(process.env.PORT || 3000);
