@@ -43,8 +43,9 @@ app.use(cors({
 }));
 
 app.use((req, res, next) => {
-  res.setHeader("AMP-Access-Control-Allow-Source-Origin", "*");
-  res.setHeader("AMP-Access-Control-Allow-Source-Origin", "*");
+  let srcOrigin = req.query["__amp_source_origin"] || '*';
+  res.setHeader("AMP-Access-Control-Allow-Source-Origin", srcOrigin);
+  res.setHeader("AMP-Access-Control-Allow-Source-Origin", srcOrigin);
   res.setHeader("Access-Control-Expose-Headers", "AMP-Access-Control-Allow-Source-Origin");
   next();
 });
