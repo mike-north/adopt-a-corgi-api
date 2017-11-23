@@ -10,7 +10,8 @@ const PUPPY_DATA = [
     birthday: "10/27/2017",
     vaccinated: true,
     isFavorited: true,
-    gender: "male"
+    gender: "male",
+    "url": "./img/Fred1.png"
   },
   {
     name: "Babe",
@@ -18,7 +19,8 @@ const PUPPY_DATA = [
     birthday: "10/18/2017",
     vaccinated: true,
     isFavorited: true,
-    gender: "female"
+    gender: "female",
+    "url": "./img/Babe1.png"
   },
   {
     name: "Sire",
@@ -26,7 +28,8 @@ const PUPPY_DATA = [
     birthday: "10/18/2012",
     vaccinated: true,
     isFavorited: true,
-    gender: "female"
+    gender: "female",
+    "url": "./img/Sire1.png"
   },
   {
     name: "Biscuit",
@@ -34,7 +37,8 @@ const PUPPY_DATA = [
     birthday: "10/01/2017",
     vaccinated: true,
     isFavorited: true,
-    gender: "male"
+    gender: "male",
+    "url": "./img/Biscuit1.png"
   }
 ];
 
